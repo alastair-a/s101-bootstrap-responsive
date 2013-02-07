@@ -1,0 +1,182 @@
+/* --------- /Mixins ------- */
+.border-box {
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  padding-top: 70px;
+}
+/* --------- /Body ------- */
+.navbar .btn {
+  margin-top: 10px;
+}
+.navbar ul.nav li.active a {
+  background: none;
+  box-shadow: none;
+}
+.navbar ul.nav li.active a:hover {
+  background: none;
+  box-shadow: none;
+}
+.navbar ul.nav li.dropdown > a {
+  padding: 10px 15px;
+  background: #222;
+  margin-left: 20px;
+  border-right: 1px solid #111;
+  border-left: 1px solid #111;
+}
+.navbar ul.nav li.dropdown > a img {
+  margin-left: 10px;
+}
+.navbar .input-append {
+  margin: 10px 0 0 20px;
+  color: #eee;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+}
+.navbar .input-append .span3 {
+  background: #505050;
+  border: 1px solid #000;
+  color: #ccc;
+}
+.navbar .input-append .btn-search {
+  border: 1px solid #000;
+  background: black;
+}
+.navbar .input-append .btn-search i {
+  text-shadow: none;
+  color: #eee;
+  -webkit-font-smoothing: antialiased;
+}
+/* --------- /Navbar ------- */.navbar .brand {
+  padding: 0;
+}
+.navbar-inverse .navbar-inner {
+  background: #2b2b2b;
+  font-size: 1.15em;
+  padding: 3px 0;
+  box-shadow: 0px 0px 5px #000000;
+  -moz-box-shadow: 0px 0px 5px #000000;
+  -webkit-box-shadow: 0px 0px 5px #000000;
+}
+#comments {
+  display: none;
+}
+#comments .comment-left {
+  float: left;
+  margin-right: 3%;
+  width: 7%;
+}
+#comments .comment-right {
+  float: left;
+  width: 90%;
+}
+#comments .comment-right .comment-author {
+  font-weight: bold;
+}
+.post {
+  margin-bottom: 1em;
+}
+.exp-teasers {
+  margin-top: 2em;
+}
+.exp-teaser {
+  background: #eaeaea;
+  height: auto;
+}
+.exp-teaser-content {
+  padding: 25px;
+}
+#exp-body {
+  position: relative;
+}
+.inline-teasers {
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #444;
+  color: #f3f3f3;
+  float: left;
+  left: -100px;
+  margin: 0 -70px 40px 0;
+  padding: 20px;
+  position: relative;
+  height: auto;
+  width: 340px;
+}
+.inline-teasers .inline-teaser-left {
+  float: left;
+  margin-right: 3%;
+  width: 20%;
+}
+.inline-teasers .inline-teaser-right {
+  float: left;
+  width: 77%;
+}
+/* --------- /Responsive ------- *//* Large desktop */
+@media (min-width: 1200px) {
+  
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .inline-teasers {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #444;
+    color: #ccc;
+    float: left;
+    left: 0px;
+    margin: 0 15px 40px 0;
+    padding: 20px;
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+  .inline-teasers .inline-teaser-left {
+    float: left;
+    margin-right: 3%;
+    width: 20%;
+  }
+  .inline-teasers .inline-teaser-right {
+    float: left;
+    width: 77%;
+  }
+  .exp-teasers img {
+    min-width: 100%!important;
+  }
+  .exp-teaser {
+    margin-bottom: 30px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .inline-teasers {
+    width: 100%;
+  }
+  .exp-teasers img {
+    min-width: 100%!important;
+  }
+  .exp-teaser {
+    margin-bottom: 30px;
+  }
+}
+/* Viewports with collapsed primary menus */
+@media (min-width: 0px) and (max-width: 979px) {
+  body {
+    padding-top: 0;
+  }
+  .navbar .btn-navbar {
+    float: left;
+    margin-right: 10px;
+  }
+}
